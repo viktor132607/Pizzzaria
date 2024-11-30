@@ -27,7 +27,15 @@ namespace Fratelli.Controllers
         {
             return View();
         }
-		public IActionResult Contact()
+        public IActionResult Salads()
+        {
+            return View();
+        }
+        public IActionResult Basket()
+        {
+            return View();
+        }
+        public IActionResult Contact()
 		{
 			return View();
 		}
