@@ -2,5 +2,141 @@
 	ViewData["About"] = "About";
 }
 
-<h2>Fratelli menu</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ASP.NET Project - Home</title>
+    <link href="/css/site.css" rel="stylesheet" /> <!-- Add custom CSS file -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        nav {
+            background-color: #00274d;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        .hero {
+            background-image: url('/images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+        .featured-products {
+            padding: 20px;
+            text-align: center;
+        }
+
+            .featured-products h2 {
+                margin-bottom: 20px;
+            }
+
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+            .product img {
+                width: 100%;
+                height: auto;
+            }
+
+            .product h3 {
+                padding: 10px 0;
+            }
+
+        .footer {
+            background-color: #00274d;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <a href="/">Home</a>
+            <a href="/menu">Menu</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div>
+            <a href="/login">Login</a>
+            <a href="/cart">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to My Pizza Shop</h1>
+            <p>Delicious pizzas, fresh ingredients, and quick delivery!</p>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="/images/pizza1.jpg" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>$12.99</p>
+        </div>
+        <div class="product">
+            <img src="/images/pizza2.jpg" alt="Veggie Pizza">
+            <h3>Veggie Pizza</h3>
+            <p>$10.99</p>
+        </div>
+        <div class="product">
+            <img src="/images/pizza3.jpg" alt="Cheese Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>$9.99</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 My Pizza Shop. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
