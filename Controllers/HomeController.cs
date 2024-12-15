@@ -39,7 +39,11 @@ namespace Fratelli.Controllers
 		{
 			return View();
 		}
-		public IActionResult About()
+        public IActionResult Desserts()
+        {
+            return View();
+        }
+        public IActionResult About()
 		{
 			return View();
 		}
